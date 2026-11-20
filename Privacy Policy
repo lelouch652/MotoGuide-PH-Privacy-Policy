@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — MotoGuide PH by MotoTech</title>
+  <meta name="description" content="Official Privacy Policy and Data Safety disclosures for MotoGuide PH (com.mototech.motoguideph) published by MotoTech." />
+  <style>
+    :root {
+      --navy: #0F172A;
+      --slate: #1E293B;
+      --gold: #F59E0B;
+      --amber: #D97706;
+      --emerald: #059669;
+      --teal: #0F766E;
+      --bg: #F4F6F9;
+      --surface: #FFFFFF;
+      --surface-alt: #F8FAFC;
+      --border: #CBD5E1;
+      --text: #0F172A;
+      --text-muted: #475569;
+      --chip-bg: rgba(245, 158, 11, 0.16);
+      --emerald-bg: rgba(5, 150, 105, 0.12);
+      --emerald-border: rgba(5, 150, 105, 0.42);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0B1120;
+        --surface: #162033;
+        --surface-alt: #1E293B;
+        --border: #334155;
+        --text: #F8FAFC;
+        --text-muted: #94A3B8;
+        --chip-bg: rgba(245, 158, 11, 0.20);
+        --emerald-bg: rgba(5, 150, 105, 0.18);
+        --emerald-border: rgba(110, 231, 183, 0.40);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 16px 56px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--slate) 100%);
+      color: #FFFFFF;
+      border-radius: 22px;
+      padding: 28px 24px;
+      box-shadow: 0 14px 32px rgba(15, 23, 42, 0.18);
+      border: 1px solid rgba(245, 158, 11, 0.28);
+      margin-bottom: 18px;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .badge-gold {
+      background: rgba(245, 158, 11, 0.22);
+      color: #FCD34D;
+    }
+
+    .badge-emerald {
+      background: rgba(5, 150, 105, 0.24);
+      color: #6EE7B7;
+    }
+
+    .badge-slate {
+      background: rgba(255, 255, 255, 0.12);
+      color: #E2E8F0;
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: clamp(1.5rem, 3vw, 2.05rem);
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p {
+      margin: 0;
+      color: rgba(248, 250, 252, 0.86);
+      font-size: 0.96rem;
+    }
+
+    .hero-meta {
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px 24px;
+      font-size: 0.85rem;
+      color: rgba(226, 232, 240, 0.9);
+    }
+
+    .hero-meta strong {
+      color: #FCD34D;
+    }
+
+    .guarantee-banner {
+      background: var(--emerald-bg);
+      border: 1px solid var(--emerald-border);
+      border-radius: 16px;
+      padding: 16px 18px;
+      margin-bottom: 18px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .guarantee-icon {
+      flex-shrink: 0;
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      background: rgba(5, 150, 105, 0.20);
+      color: var(--emerald);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+
+    .guarantee-banner h2 {
+      margin: 0 0 4px;
+      font-size: 1rem;
+    }
+
+    .guarantee-banner p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    .toc-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px 20px;
+      margin-bottom: 20px;
+    }
+
+    .toc-title {
+      margin: 0 0 10px;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--amber);
+      font-weight: 700;
+    }
+
+    .toc-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .toc-links a {
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text);
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      padding: 6px 11px;
+      border-radius: 999px;
+      transition: border-color 0.15s ease, background-color 0.15s ease;
+    }
+
+    .toc-links a:hover,
+    .toc-links a:focus-visible {
+      border-color: var(--gold);
+      background: var(--chip-bg);
+      outline: none;
+    }
+
+    .section-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px 22px;
+      margin-bottom: 14px;
+      scroll-margin-top: 18px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .section-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 28px;
+      height: 28px;
+      padding: 0 8px;
+      border-radius: 8px;
+      background: var(--chip-bg);
+      color: var(--amber);
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    .section-card h2 {
+      margin: 0;
+      font-size: 1.08rem;
+      line-height: 1.35;
+    }
+
+    .section-card p {
+      margin: 0 0 10px;
+      color: var(--text-muted);
+      font-size: 0.94rem;
+    }
+
+    .section-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-card ul {
+      margin: 8px 0 0;
+      padding-left: 20px;
+      color: var(--text-muted);
+      font-size: 0.94rem;
+    }
+
+    .section-card li {
+      margin-bottom: 6px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 0.89rem;
+    }
+
+    .data-table th,
+    .data-table td {
+      text-align: left;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+
+    .data-table th {
+      color: var(--text);
+      font-weight: 700;
+      background: var(--surface-alt);
+    }
+
+    .data-table td {
+      color: var(--text-muted);
+    }
+
+    .contact-box {
+      margin-top: 12px;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      font-size: 0.92rem;
+    }
+
+    .contact-box a {
+      color: var(--amber);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 26px;
+      text-align: center;
+      font-size: 0.84rem;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 22px 18px;
+      }
+
+      .section-card {
+        padding: 18px 16px;
+      }
+
+      .data-table th,
+      .data-table td {
+        padding: 8px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #FFFFFF;
+        color: #0F172A;
+      }
+
+      .toc-card {
+        display: none;
+      }
+
+      .hero {
+        box-shadow: none;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .section-card {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <div class="badge-row">
+        <span class="badge badge-gold">PRIVACY POLICY</span>
+        <span class="badge badge-emerald">RA 10173 COMPLIANT</span>
+        <span class="badge badge-slate">com.mototech.motoguideph</span>
+      </div>
+      <h1>MotoGuide PH Privacy &amp; Data Safety Policy</h1>
+      <p>
+        Published by <strong>MotoTech (MotoGuide PH)</strong>. Designed for offline-first Philippine motorcycle riders with strict on-device privacy and zero third-party advertising trackers.
+      </p>
+      <div class="hero-meta">
+        <span><strong>Publisher:</strong> MotoTech</span>
+        <span><strong>Effective Date:</strong> November 17, 2026</span>
+        <span><strong>Contact:</strong> mototechstudios@gmail.com</span>
+      </div>
+    </header>
+
+    <section class="guarantee-banner" aria-label="On-device privacy guarantee">
+      <div class="guarantee-icon" aria-hidden="true">&#10003;</div>
+      <div>
+        <h2>100% On-Device Rider Data Guarantee</h2>
+        <p>
+          No user account sign-up required. MotoTech does not sell, rent, or upload your citation logs, ticket photos, bookmarks, or offline searches to external cloud servers.
+        </p>
+      </div>
+    </section>
+
+    <nav class="toc-card" aria-label="Privacy policy sections">
+      <p class="toc-title">Quick Navigation</p>
+      <div class="toc-links">
+        <a href="#local-storage">1. Local Storage</a>
+        <a href="#photo-picker">2. Photo Picker</a>
+        <a href="#lto-documents">3. Offline LTO Docs</a>
+        <a href="#subscriptions">4. Play Billing</a>
+        <a href="#permissions">5. Zero Tracking</a>
+        <a href="#data-safety">6. Data Safety Summary</a>
+        <a href="#rights">7. Your RA 10173 Rights</a>
+        <a href="#children">8. Children&rsquo;s Privacy</a>
+        <a href="#disclaimer">9. Disclaimer &amp; Contact</a>
+      </div>
+    </nav>
+
+    <article class="section-card" id="local-storage">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2>Local-Only Rider Data Storage</h2>
+      </div>
+      <p>
+        All personal records you enter inside MotoGuide PH remain strictly on your Android device inside a private local Room SQLite database managed by MotoTech. This includes:
+      </p>
+      <ul>
+        <li>Traffic citation logs (TOP/OVR ticket numbers, violation codes, issuing agencies, dates, deadlines, fine amounts, demerit points, settlement OR references, and rider notes).</li>
+        <li>Bookmarked LTO guidelines, pre-ride safety checklist completions, and UI customization preferences (theme, accent palette, font scale, card density, and dashboard section layout).</li>
+      </ul>
+      <p>
+        MotoTech does not maintain a remote database of your riding history or citation activity, and none of these entries are transmitted off your device.
+      </p>
+    </article>
+
+    <article class="section-card" id="photo-picker">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2>Citation Ticket Photos &amp; Android Photo Picker</h2>
+      </div>
+      <p>
+        When MotoGuide PH Pro subscribers attach an image of a physical citation ticket or official settlement receipt, the app uses the privacy-preserving Android System Photo Picker (<code>PickVisualMedia</code>).
+      </p>
+      <ul>
+        <li>MotoGuide PH never requests broad media or external storage permissions (such as <code>READ_EXTERNAL_STORAGE</code> or <code>READ_MEDIA_IMAGES</code>).</li>
+        <li>Only the single image you explicitly choose is copied into MotoGuide PH&rsquo;s private app-internal storage directory so you can view it offline.</li>
+        <li>Deleting a citation inside the app immediately deletes its associated local ticket photo file from private app storage.</li>
+      </ul>
+    </article>
+
+    <article class="section-card" id="lto-documents">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2>Bundled Official LTO Documents &amp; Offline Search</h2>
+      </div>
+      <p>
+        All 103 official Land Transportation Office (LTO), DOTr, and DENR reference issuances—including Republic Acts, Implementing Rules and Regulations (IRRs), Administrative Orders, Department Orders, Memorandum Circulars, and Office Orders—are packaged directly inside the application.
+      </p>
+      <p>
+        Global Search queries across guidelines, violation fine schedules, and the 103 official PDFs execute 100% locally on your device. Your searches are never logged to external servers. When you choose to share or export a printable PDF compendium or official document, sharing occurs only through the Android system share sheet using a scoped <code>FileProvider</code> URI that you initiate.
+      </p>
+    </article>
+
+    <article class="section-card" id="subscriptions">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2>MotoGuide PH Pro Subscriptions &amp; Google Play Billing</h2>
+      </div>
+      <p>
+        Optional Monthly (&#8369;99/month) and Yearly (&#8369;799/year with a 7-day free trial) MotoGuide PH Pro subscriptions are processed directly by Google Play Billing (<code>com.android.billingclient</code>).
+      </p>
+      <ul>
+        <li>MotoTech never receives, accesses, or stores your credit card numbers, debit card details, GCash/Maya credentials, or Google Pay payment instruments.</li>
+        <li>Google Play communicates only minimal purchase state metadata (selected plan ID, subscription status, renewal/expiry timestamp, and purchase token) to verify and unlock Pro features locally on your device.</li>
+        <li>Authorized Google Play App Review access credentials entered in the app&rsquo;s reviewer verification dialog are checked locally on-device solely to unlock Pro features for store review testing and are never uploaded externally.</li>
+      </ul>
+    </article>
+
+    <article class="section-card" id="permissions">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2>Permissions, Analytics &amp; Zero Third-Party Tracking</h2>
+      </div>
+      <p>
+        MotoTech built MotoGuide PH with a strict least-privilege posture:
+      </p>
+      <ul>
+        <li><strong>No Advertising SDKs:</strong> No third-party ad networks, ad mediation libraries, or behavioral tracking pixels.</li>
+        <li><strong>No Analytics Telemetry:</strong> No third-party crash-profiling trackers or behavioral session-recording SDKs.</li>
+        <li><strong>No Sensitive Sensor Harvesting:</strong> MotoGuide PH does not collect background GPS location, contacts, call logs, SMS messages, microphone audio, or advertising IDs.</li>
+      </ul>
+    </article>
+
+    <article class="section-card" id="data-safety">
+      <div class="section-header">
+        <span class="section-num">06</span>
+        <h2>Google Play Data Safety Summary</h2>
+      </div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Data Category</th>
+            <th>Collected / Shared Off-Device?</th>
+            <th>How It Is Handled</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Citations, fines, &amp; notes</td>
+            <td>No (On-device only)</td>
+            <td>Stored locally in private Room SQLite database; deleted with citation or app uninstall.</td>
+          </tr>
+          <tr>
+            <td>Selected ticket photos</td>
+            <td>No (On-device only)</td>
+            <td>User-selected via Android Photo Picker; saved only inside private app storage.</td>
+          </tr>
+          <tr>
+            <td>App search queries &amp; settings</td>
+            <td>No (On-device only)</td>
+            <td>Processed locally offline; never transmitted to MotoTech servers.</td>
+          </tr>
+          <tr>
+            <td>Subscription purchase status</td>
+            <td>Processed by Google Play</td>
+            <td>Verified via Google Play Billing SDK to enable MotoGuide PH Pro features.</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <article class="section-card" id="rights">
+      <div class="section-header">
+        <span class="section-num">07</span>
+        <h2>Your Rights &amp; Data Deletion (RA 10173)</h2>
+      </div>
+      <p>
+        In accordance with the Philippine Data Privacy Act of 2012 (Republic Act No. 10173), you retain full ownership and control over every record stored on your device:
+      </p>
+      <ul>
+        <li><strong>Access &amp; Correction:</strong> View or edit any citation log, ticket number, fine, or note directly inside Citation History.</li>
+        <li><strong>Targeted Deletion:</strong> Delete individual citation records (which also deletes any attached ticket photo) or reset UI customization settings at any time.</li>
+        <li><strong>Complete Erasure:</strong> Clear App Storage in Android System Settings or uninstall MotoGuide PH to permanently erase the local database and all stored images.</li>
+        <li><strong>Subscription Management:</strong> Manage or cancel auto-renewal anytime via Google Play Subscriptions or in-app Pro management.</li>
+      </ul>
+    </article>
+
+    <article class="section-card" id="children">
+      <div class="section-header">
+        <span class="section-num">08</span>
+        <h2>Children&rsquo;s Privacy &amp; Policy Updates</h2>
+      </div>
+      <p>
+        MotoGuide PH is designed for licensed motorcycle riders and vehicle owners in the Philippines and is not directed to children under the age of 13. MotoTech does not knowingly collect personal information from children.
+      </p>
+      <p>
+        If MotoTech updates this Privacy Policy to reflect new app capabilities or regulatory requirements, the updated policy and effective date will be published at this URL and inside the MotoGuide PH app.
+      </p>
+    </article>
+
+    <article class="section-card" id="disclaimer">
+      <div class="section-header">
+        <span class="section-num">09</span>
+        <h2>Official Government Sources, Disclaimer &amp; Contact Information</h2>
+      </div>
+      <p>
+        MotoGuide PH is an independent rider reference tool published by <strong>MotoTech</strong> and is not officially affiliated with, endorsed by, or representing the Land Transportation Office (LTO), Department of Transportation (DOTr), Metropolitan Manila Development Authority (MMDA), or any Philippine government agency.
+      </p>
+      <p>
+        All public traffic laws, Republic Acts, LTO Memorandum Circulars, Administrative Orders, and fine schedules referenced in the app are sourced from official Philippine government publications:
+      </p>
+      <ul>
+        <li><strong>LTO Official Website:</strong> <a href="https://lto.gov.ph" target="_blank" rel="noopener noreferrer">https://lto.gov.ph</a></li>
+        <li><strong>LTO Issuances Repository (MCs, AOs, IRRs, Office Orders):</strong> <a href="https://lto.gov.ph/issuances" target="_blank" rel="noopener noreferrer">https://lto.gov.ph/issuances</a></li>
+        <li><strong>Official Gazette of the Philippines (Republic Acts 4136, 10054, 10586, 10666, 10913, 11235, 12209):</strong> <a href="https://www.officialgazette.gov.ph" target="_blank" rel="noopener noreferrer">https://www.officialgazette.gov.ph</a></li>
+        <li><strong>Department of Transportation (DOTr &amp; JAO 2014-01 Fines):</strong> <a href="https://www.dotr.gov.ph" target="_blank" rel="noopener noreferrer">https://www.dotr.gov.ph</a></li>
+        <li><strong>LTO LTMS Client Portal (Violations &amp; License Verification):</strong> <a href="https://portal.lto.gov.ph" target="_blank" rel="noopener noreferrer">https://portal.lto.gov.ph</a></li>
+      </ul>
+      <div class="contact-box">
+        <strong>Data Controller:</strong> MotoTech (MotoGuide PH)<br />
+        <strong>Android Package ID:</strong> <code>com.mototech.motoguideph</code><br />
+        <strong>Privacy &amp; Support Email:</strong> <a href="mailto:mototechstudios@gmail.com">mototechstudios@gmail.com</a>
+      </div>
+    </article>
+
+    <footer>
+      &copy; 2026 MotoTech &bull; MotoGuide PH (<code>com.mototech.motoguideph</code>). All rights reserved.
+    </footer>
+  </main>
+</body>
+</html>
